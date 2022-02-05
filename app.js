@@ -23,7 +23,7 @@ app.set('view engine', '.hbs');
 
 // Add single reference to the model into application object
 // and reuse it whenever an access to DB is needed
-//app.set('db_model', require('./lib/model/db'));
+app.set('db_model', require('./lib/model/db'));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -38,9 +38,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Setup authentication mechanism
 const passport = require('./lib/passport')();
 
-/*app.use(createSessionMiddleware({
+app.use(createSessionMiddleware({
   sequelizeDb: app.get('db_model').sequelize,
-}))*/
+}))
 app.use(passport.initialize());
 app.use(passport.session());
 
