@@ -1,13 +1,12 @@
 {
-  "allow_create_new_accounts" : true,
-  "send_emails"              : false,
-  "application_sender_email" : "test@test.com",
+  "allow_create_new_accounts" : false,
+  "send_emails"              : true,
+  "application_sender_email" : "'TimeOff' <ad.robotics.vsse@gmail.com>",
   "email_transporter" : {
-    "host" : "localhost",
-    "port" : 25,
+    "service": "Gmail",
     "auth" : {
-      "user" : "user",
-      "pass" : "pass"
+      "user" : "ad.robotics.vsse@gmail.com",
+      "pass" : "AD2020vsse"
     }
   },
   "sessionStore": {
@@ -19,7 +18,9 @@
   },
   "ga_analytics_on" : false,
   "crypto_secret" : "!2~`HswpPPLa22+=±§sdq qwe,appp qwwokDF_",
-  "application_domain" : "http://app.timeoff.management",
-  "promotion_website_domain" : "http://timeoff.management",
+  "application_domain" : "http://timeoffbeta.tsse-robotics.club",
+  "promotion_website_domain" : "http://timeoffbeta.tsse-robotics.club",
+  "clockfiy_api_url": "https://api.clockify.me/api/v1/workspaces/5e2c07a86b5d0e21a1e89383",
+  "clockfiy_auth_key": "XlOMcUDG4gAtjZT6",
   "locale_code_for_sorting": "en"
 }
