@@ -1,6 +1,6 @@
 {
   "allow_create_new_accounts" : false,
-  "send_emails"              : false,
+  "send_emails"              : true,
   "application_sender_email" : "'TimeOff' <ad.robotics.vsse@gmail.com>",
   "email_transporter" : {
     "service": "Gmail",
