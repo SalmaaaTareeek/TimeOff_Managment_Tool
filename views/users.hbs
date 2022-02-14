@@ -62,6 +62,9 @@
         <td>{{# if this.is_admin }}Yes{{else}}{{/if}}</td>
         <td class="vpp-days-remaining">{{ this.number_of_days_available_in_allowance }}</td>
         <td class="vpp-days-used">{{this.number_of_days_taken_from_allowance}}</td>
+        <td class="vpp-days-annual">{{this.number_of_annual_days_taken_from_allowance}}</td>
+        <td class="vpp-days-casual">{{this.number_of_casual_days_taken_from_allowance}}</td>
+        <td class="vpp-days-sick">{{this.number_of_sick_days_taken_from_allowance}}</td>
       </tr>
       {{/each}}
     </tbody>
