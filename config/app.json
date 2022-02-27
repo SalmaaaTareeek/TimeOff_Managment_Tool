@@ -1,12 +1,12 @@
 {
   "allow_create_new_accounts" : false,
   "send_emails"              : true,
-  "application_sender_email" : "'TimeOff' <ad.robotics.vsse@gmail.com>",
+  "application_sender_email" : "'TimeOff' <timeoff.robotics.vsse@gmail.com>",
   "email_transporter" : {
     "service": "Gmail",
     "auth" : {
-      "user" : "ad.robotics.vsse@gmail.com",
-      "pass" : "AD2020vsse"
+      "user" : "timeoff.robotics.vsse@gmail.com",
+      "pass" : "AD2022vsse"
     }
   },
   "sessionStore": {
