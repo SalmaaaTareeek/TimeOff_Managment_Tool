@@ -20,14 +20,20 @@
           </div>
           {{/if_equal}}
 
+          {{!-- To Disable any Item From DropDown Menu --}}
+
           <div class="form-group">
             <label for="leave_type" class="control-label">Leave type:</label>
             <select class="form-control" id="leave_type" name="leave_type">
-            {{#each logged_user.company.leave_types }}
-              <option value={{this.id}} data-tom="{{this.name}}" data-tom-index={{@index}}>{{this.name}}</option>
+            {{#each logged_user.company.leave_types}}
+              {{#if_equal this.name "Unknown"}}
+              {{else}}
+               <option value={{this.id}} data-tom="{{this.name}}" data-tom-index={{@index}}>{{this.name}}</option>
+              {{/if_equal}} 
             {{/each}}
             </select>
           </div>
+          {{!-- End of Disabling --}}
 
           <div class="form-group">
             <label for="from" class="control-label">From:</label>
